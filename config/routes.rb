@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :races
 ### this is comands need to get all routes in api ### but not suitable for solution
 
-  namespace :api, defaults: {format: 'json'} do
+  namespace :api do
     resources :racers do
       resources :entries, only: [:index, :show]
     end

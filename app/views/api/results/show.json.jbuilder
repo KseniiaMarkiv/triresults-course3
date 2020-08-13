@@ -1,0 +1,1 @@
+json.partial! "api/results/_result", locals: {result: @result}
